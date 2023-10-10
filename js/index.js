@@ -69,6 +69,10 @@ const display = document.querySelector(".display");
                     input += keyName;
                     updateDisplay();
                     return;
+                case "%":
+                    input = (input/100)*input;
+                    updateDisplay();
+                    return;
                 case "=":
                 case "Enter":
                     try {
